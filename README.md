@@ -14,11 +14,11 @@ given threshold.
 mvn clean compile assembly:single
 
 * Create Lambda functions using the jar generated above, having the following handlers:
-** cloud.cirrusup.handler.SetUnlimitedCapacity::handleRequest -> for setting *unlimited* capacity
-** cloud.cirrusup.handler.SetLimitedCapacity::handleRequest -> for setting *limited* capacity
+    ** cloud.cirrusup.handler.SetUnlimitedCapacity::handleRequest -> for setting *unlimited* capacity
+    ** cloud.cirrusup.handler.SetLimitedCapacity::handleRequest -> for setting *limited* capacity
 
 * Set the following environment variable:
-JAVA_TOOL_OPTIONS -> -DasgName=<asg_name> -Daws.accessKeyId=<> -Daws.secretKey=<> 
+JAVA_TOOL_OPTIONS -> -DasgName=<asg_name> -Daws.accessKeyId=<> -Daws.secretKey=<> -DawsRegion=<>
 
 * Create a new IAM user, having the following policy
 ```
