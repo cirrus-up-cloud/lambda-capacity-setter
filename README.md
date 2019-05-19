@@ -45,3 +45,7 @@ JAVA_TOOL_OPTIONS -> -DasgName=<asg_name> -Daws.accessKeyId=<> -Daws.secretKey=<
 #### Create alarms ####
 * Add the SNS topics created above as actions when alarm are triggered
 
+### More details ###
+http://bit.ly/2HqHXzT
+
+Your contribution is welcome!
